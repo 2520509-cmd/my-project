@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ticketing & Reservation System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.hero {
+    height: 90vh;
+    background: linear-gradient(to right, #000000, #434343);
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Ticketing System</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#search">Search</a></li>
+        <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="#register">Register</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <div class="container">
+    <h1 class="display-4">Online Ticketing & Reservation</h1>
+    <p class="lead">Fast • Secure • Easy Booking</p>
+    <a href="#search" class="btn btn-primary btn-lg">Book Ticket</a>
+  </div>
+</section>
+
+<!-- SEARCH TICKETS -->
+<section id="search">
+  <div class="container">
+    <h2 class="text-center mb-4">Search Tickets</h2>
+    <form class="row g-3">
+      <div class="col-md-4">
+        <label class="form-label">From</label>
+        <input type="text" class="form-control" placeholder="Source">
+      </div>
+      <div class="col-md-4">
+        <label class="form-label">To</label>
+        <input type="text" class="form-control" placeholder="Destination">
+      </div>
+      <div class="col-md-4">
+        <label class="form-label">Date</label>
+        <input type="date" class="form-control">
+      </div>
+      <div class="col-12 text-center">
+        <button class="btn btn-success mt-3">Search Ticket</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- LOGIN -->
+<section id="login" class="bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Login</h2>
+    <div class="col-md-4 mx-auto">
+      <form>
+        <input type="email" class="form-control mb-3" placeholder="Email">
+        <input type="password" class="form-control mb-3" placeholder="Password">
+        <button class="btn btn-primary w-100">Login</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- REGISTER -->
+<section id="register">
+  <div class="container">
+    <h2 class="text-center mb-4">Register</h2>
+    <div class="col-md-5 mx-auto">
+      <form>
+        <input type="text" class="form-control mb-3" placeholder="Full Name">
+        <input type="email" class="form-control mb-3" placeholder="Email">
+        <input type="password" class="form-control mb-3" placeholder="Password">
+        <button class="btn btn-success w-100">Create Account</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="text-center">
+      <p><strong>Email:</strong> support@ticketing.com</p>
+      <p><strong>Phone:</strong> 0300-1234567</p>
+      <p><strong>Address:</strong> Wah Cantt, Pakistan</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2025 Ticketing & Reservation System | Muhammad Dilshad
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
